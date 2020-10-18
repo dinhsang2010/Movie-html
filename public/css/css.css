@@ -1,0 +1,85 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+/* header */
+#movieNavbar .navbar-nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#movieNavbar .navbar-nav .nav-item::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  display: block;
+  background-image: linear-gradient(to right, #fbbd61, #ec7532);
+  box-shadow: 0 0 20px 0 #fbbd61;
+  transition: all 0.5s;
+}
+#movieNavbar .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: .8em;
+  display: inline-block;
+  padding: 20px 24px;
+  letter-spacing: 3px;
+  color: white;
+}
+#movieNavbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+#movieNavbar .navbar-nav .nav-item.active::after {
+  width: 100%;
+}
+header {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+}
+#carouselMoview .carousel-caption {
+  text-align: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#carouselMoview .carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: transparent;
+  opacity: 1;
+  /* background-clip: border-box; */
+}
+#carouselMoview .carousel-indicators li.active {
+  background: white;
+}
+#carouselMoview .carousel-indicators {
+  justify-content: flex-start;
+  left: 50%;
+  bottom: 80px;
+  transform: translateX(-50%);
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.newIn-img {
+  position: relative;
+  overflow: hidden;
+}
+.newIn-overplay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(to bottom, #fbbd61, #ec7532);
+  opacity: 8.8;
+  transform: skewX(30deg) translateX(-130%);
+  transition: all 0.5s;
+}
+.newIn-img:hover .newIn-overplay {
+  transform: skewX(30deg) translateX(-23%);
+}

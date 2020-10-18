@@ -1,0 +1,41 @@
+/* Demo destop first */
+/* xay dung o man hinh lon truoc roi sua cho phu hop o man hinh nho sau
+ */
+/* media query */
+/* type: screen, print, speech, all */
+h1 {
+  background-color: red;
+}
+@media screen and (max-width: 1200px) {
+  /* nho hon 1200px */
+  h1 {
+    background-color: yellow;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* nho hon 1200px */
+  h1 {
+    background-color: green;
+  }
+}
+
+/* Demo mobie first */
+/* nguoc lai */
+h2 {
+  background-color: greenyellow;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    background-color: royalblue;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    background-color: seagreen;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+  h2 {
+    background-color: darkblue;
+  }
+}
